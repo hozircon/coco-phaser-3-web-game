@@ -26,14 +26,15 @@ function showTime(){
     var nowDate = new Date($.ajax({async: false}).getResponseHeader("Date"));
     difference = (endDate.getTime()-nowDate.getTime())/1000;
 
-
     timeNum = computeTime(difference);
     var timeWord = ['year','day','hour','min','sec'];
+
     for(var i = 0; i<timeWord.length; i++){
         if(timeNum[i]<10){
             timeNum[i] = "0" + timeNum[i];
             }
         document.getElementById(timeWord[i]).innerHTML =   timeNum[i];
     }
+
     setTimeout('showTime()',1000);
 }
