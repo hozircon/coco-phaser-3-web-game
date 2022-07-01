@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="js/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="header txt_org" id="time_data">
+			<h1>距離桐生ココ回歸還有</h1>
+            <div class="col_c">
+                <span class="time_num" id="year"></span>
+                <span class="time_word txt_org">年</span>
+            </div>
+            <span class="time_num">:</span>
+            <div class="col_c">
+                <span class="time_num" id="day"></span>
+                <span class="time_word txt_org">天</span>
+            </div>
+            <span class="time_num">:</span>
+            <div class="col_c">
+                <span class="time_num" id="hour"></span>
+                <span class="time_word txt_org">時</span>
+            </div>
+            <span class="time_num">:</span>
+            <div class="col_c">
+                <span class="time_num" id="min"></span>
+                <span class="time_word txt_org">分</span>
+            </div>
+            <span class="time_num">:</span>
+            <div class="col_c">
+                <span class="time_num" id="sec"></span>
+                <span class="time_word txt_org">秒</span>
+            </div>
+		</div>
+
+        <div class = "container">
+            <div class="exam_br" id="sidebar1">
+            </div>
+		    <div class="exam_br" id="app"></div>
+		    <div class="exam_br" id="sidebar3">
+            </div>
+        </div>
+
+        <div class = "foot">
+            <br/>合作夥伴:
+            <br/>背景(background)：Ej_com <a href="https://twitter.com/Ej12134559" style="color:white;"> twitter@Ej12134559</a>
+            <br/>角色(character):Walfie <a href="https://twitter.com/walfieee" style="color:white;">twitter@walfieee</a>
+        </div>
+        <!--  haser.min.js ~ index.js for phaser's game -->
+        <script src="js/lib/phaser.min.js"></script>
+        <script src="js/const.js"></script>
+        <script src="js/gameStart.js"></script>
+        <script src="js/gamePlay.js"></script>
+        <script src="js/index.js"></script>
+        <!-- api request method  -->
+        <script src="js/webMethod.js"></script>
+    </body>
+</html>
