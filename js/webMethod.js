@@ -23,7 +23,7 @@ function computeTime(timeSec){
 function showTime(){
     //計算距離目標時間，並扣除玩家總遊玩時間(sum of play_survival_time)後，渲染到畫面上方time_data2區塊
     var endDate = new Date("07/01/2521");
-    var nowDate = new Date($.ajax({async: false}).getResponseHeader("Date"));
+    var nowDate = new Date();
     difference = (endDate.getTime()-nowDate.getTime())/1000;
 
     timeNum = computeTime(difference);
